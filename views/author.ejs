@@ -1,1 +1,332 @@
-<div>HELLO WORLD YOU ARE IN AUTHORS</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="ano nymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1_photo">
+              <img
+                src="/author/images/profile_photo.png"
+                width="156px"
+                height="142px"
+                alt=""
+              />
+            </div>
+            <div class="left_1_name"><%=user.name %></div>
+            <div class="left_1_profession"><%=user.profession %></div>
+            <div class="left_1_icons">
+              <div class="icon">
+                <i
+                  class="fa-brands fa-facebook-f icon-1"
+                  style="color: rgb(0, 0, 0)"
+                ></i>
+              </div>
+              <div class="icon">
+                <i
+                  class="fa-brands fa-instagram"
+                  style="color: rgb(0, 0, 0)"
+                ></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-twitter" style="color: rgb(0, 0, 0)"></i>
+              </div>
+              <div class="icon">
+                <i
+                  class="fa-brands fa-linkedin-in"
+                  style="color: rgb(0, 0, 0)"
+                ></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-youtube" style="color: rgb(0, 0, 0)"></i>
+              </div>
+              <div class="icon">
+                <i
+                  class="fa-brands fa-dribbble"
+                  style="color: rgb(0, 0, 0)"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_2">
+            <div class="left_2_more">
+              <p>Age:</p>
+              <div><%= user.age%></div>
+            </div>
+            <div class="left_2_more">
+              <p>Residence:</p>
+              <div><%= user.residence%></div>
+            </div>
+            <div class="left_2_more">
+              <p>Freelance:</p>
+              <span>Available</span>
+            </div>
+            <div class="left_2_more">
+              <p>Address:</p>
+              <div><%= user.adress%></div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_3">
+            <b>Languages</b>
+            <div class="languages_info">
+              <div class="language">
+                <div class="per_text">
+                  <p>Uzbek</p>
+                  <div>100%</div>
+                </div>
+                <div class="perc_border_uzb">
+                  <div class="percent"></div>
+                </div>
+              </div>
+            </div>
+            <div class="languages_info">
+              <div class="language">
+                <div class="per_text">
+                  <p>English</p>
+                  <div>80%</div>
+                </div>
+                <div class="perc_border_eng">
+                  <div class="percent"></div>
+                </div>
+              </div>
+            </div>
+            <div class="languages_info">
+              <div class="language">
+                <div class="per_text">
+                  <p>Korean</p>
+                  <div>60%</div>
+                </div>
+                <div class="perc_border_kor">
+                  <div class="percent"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_4">
+            <b>Skills</b>
+            <div class="languages_info">
+              <div class="language">
+                <div class="per_text">
+                  <p>HTML</p>
+                  <div>90%</div>
+                </div>
+                <div class="perc_border_html">
+                  <div class="percent"></div>
+                </div>
+              </div>
+            </div>
+            <div class="languages_info">
+              <div class="language">
+                <div class="per_text">
+                  <p>CSS</p>
+                  <div>85%</div>
+                </div>
+                <div class="perc_border_css">
+                  <div class="percent"></div>
+                </div>
+              </div>
+            </div>
+            <div class="languages_info">
+              <div class="language">
+                <div class="per_text">
+                  <p>JS</p>
+                  <div>80%</div>
+                </div>
+                <div class="perc_border_eng">
+                  <div class="percent"></div>
+                </div>
+              </div>
+            </div>
+            <div class="languages_info">
+              <div class="language">
+                <div class="per_text">
+                  <p>PHP</p>
+                  <div>75%</div>
+                </div>
+                <div class="perc_border_php">
+                  <div class="percent"></div>
+                </div>
+              </div>
+            </div>
+            <div class="languages_info">
+              <div class="language">
+                <div class="per_text">
+                  <p>WordPress</p>
+                  <div>85%</div>
+                </div>
+                <div class="perc_border_css">
+                  <div class="percent"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_5">
+            <b>Extra Skills</b>
+            <div class="skills">
+              <i class="fa-regular fa-clone" style="color: #ffb400"></i>
+              <span>Bootstrap, Materialize</span>
+            </div>
+            <div class="skills">
+              <i class="fa-regular fa-clone" style="color: #ffb400"></i>
+              <span>Stylus, Sass, Less</span>
+            </div>
+            <div class="skills">
+              <i class="fa-regular fa-clone" style="color: #ffb400"></i>
+              <span>Gulp, Webpack, Grunt</span>
+            </div>
+            <div class="skills">
+              <i class="fa-regular fa-clone" style="color: #ffb400"></i>
+              <span>GIT Knowledge</span>
+            </div>
+          </div>
+        </div>
+        <div class="midd_frame">
+          <div class="midd_1">
+            <div class="round_yellow">
+              <img src="/author/menu_icon/r_yellow.svg" alt="" />
+            </div>
+            <div class="round_yellow_1">
+              <img src="/author/menu_icon/r_yellow.svg" alt="" />
+            </div>
+            <div class="round_green">
+              <img src="/author/menu_icon/r_green.svg" alt="" />
+            </div>
+            <div class="round_green_1">
+              <img src="/author/menu_icon/r_green.svg" alt="" />
+            </div>
+            <div class="rectangle_yellow">
+              <img src="/author/menu_icon/sq_yellow.svg" alt="" />
+            </div>
+            <div class="rectangle_blue">
+              <img src="/author/menu_icon/sq_blue.svg" alt="" />
+            </div>
+            <div class="triangle_red">
+              <img src="/author/menu_icon/t_red.svg" alt="" />
+            </div>
+
+            <div class="midd_1_info">
+              <b
+                ><%= user.profession%> <br />
+                in <%= user.adress%></b
+              >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+                elit. Et, volutpat feugiat placerat lobortis. Natoque <br />
+                rutrum semper sed suspendisse nunc lectus.
+              </p>
+              <img
+                src="/author/icon/button_hire_me.svg"
+                alt=""
+                width="154px"
+                height="51px"
+              />
+            </div>
+            <div class="midd_1_img">
+              <img
+                src="/author/images/ur_image.png"
+                alt=""
+                width="326px"
+                height="446px"
+              />
+            </div>
+          </div>
+          <div class="midd_2">
+            <b>My Services</b>
+            <p><%= user.service_desc%></p>
+          </div>
+          <div class="midd_3">
+            <div class="midd_3_square">
+              <img src="/author/box_images/icons_coding.png" alt="" />
+              <b>web development</b>
+              <p>blog, e-commerce</p>
+            </div>
+            <div class="midd_3_square">
+              <img src="/author/box_images/Vector1.png" alt="" />
+              <b>uI/uX design</b>
+              <p>Mobile app, website design</p>
+            </div>
+            <div class="midd_3_square">
+              <img src="/author/box_images/icons_microphone.png" alt="" />
+              <b>sound design</b>
+              <p>Voice Over, Beat Making</p>
+            </div>
+            <div class="midd_3_square">
+              <img src="/author/box_images/icons_game-development.png" alt="" />
+              <b>game design</b>
+              <p>Character Design, Props & Objects</p>
+            </div>
+            <div class="midd_3_square">
+              <img src="/author/box_images/icons_photographer.png" alt="" />
+              <b>photography</b>
+              <p>portrait, product photography</p>
+            </div>
+            <div class="midd_3_square">
+              <b>advertising</b>
+              <p style="width: 260px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+                nulla diam in ac dictum a urna viverra morbi.
+              </p>
+              <div>
+                <span>LEARN MORE</span>
+                <i class="fa-solid fa-angle-right" style="color: #ffb400"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_frame">
+          <div class="right_contrast_icon">
+            <img src="/author/btn_icon/icons_contrast.png" alt="" />
+          </div>
+          <div class="other_icons">
+            <div class="right_ot_ic">
+              <img src="/author/icon/home_icon.png" alt="" />
+            </div>
+            <div class="right_ot_ic">
+              <img src="/author/icon/code_icon.png" alt="" />
+            </div>
+            <div class="right_ot_ic">
+              <img src="/author/icon/person_icon.png" alt="" />
+            </div>
+            <div class="right_ot_ic">
+              <img src="/author/icon/portfolio_icon.png" alt="" />
+            </div>
+            <div class="right_ot_ic">
+              <div></div>
+            </div>
+            <div class="right_ot_ic">
+              <img src="/author/icon/sms_icon.png" alt="" />
+            </div>
+          </div>
+          <div class="others_icons">
+            <div class="right_ot_ic">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
