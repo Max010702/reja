@@ -6,6 +6,7 @@ function countLetter(letter, word) {
 
 console.log(countLetter("e", "engineer"));
 console.log(countLetter("d", "word"));
+
 // 22 MAVZU
 
 // console.log("Jack Ma maslahatlari");
