@@ -17,7 +17,7 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 //   return word.split("").filter((char) => char === letter).length;
 // }
 
-// console.log(countLetter("e", "engineer"));
+// console.log(coçuntLetter("e", "engineer"));
 // console.log(countLetter("d", "word"));
 
 // 22 MAVZU
