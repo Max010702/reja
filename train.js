@@ -1,11 +1,24 @@
-// MIT TASK
-
-function countLetter(letter, word) {
-  return word.split("").filter((char) => char === letter).length;
+// MIT TASK B
+function countDigits(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] >= "0" && str[i] <= "9") {
+      count++;
+    }
+  }
+  return count;
 }
 
-console.log(countLetter("e", "engineer"));
-console.log(countLetter("d", "word"));
+console.log(countDigits("ad2a54y79wet0sfgb9"));
+
+// // MIT TASK A
+
+// function countLetter(letter, word) {
+//   return word.split("").filter((char) => char === letter).length;
+// }
+
+// console.log(countLetter("e", "engineer"));
+// console.log(countLetter("d", "word"));
 
 // 22 MAVZU
 
