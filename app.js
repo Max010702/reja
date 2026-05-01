@@ -25,17 +25,9 @@ app.post("/create-item", (req, res) => {
   db()
     .collection("plans")
     .insertOne({ reja: reja }, (err, data) => {
-      if (err) {
-        console.log(err);
-        res.end("something went wrong");
-      } else {
-        res.end("successfully added");
-      }
+      console.log(data.ops);
+      res.json(data.ops[0]);
     });
-});
-
-app.get("/author", (req, res) => {
-  res.render("author", { user: user });
 });
 
 app.get("/", function (req, res) {
