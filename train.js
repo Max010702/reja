@@ -1,11 +1,65 @@
-// MIT TASK C
+// MIT TASK D
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
 
-function checkContent(str1, str2) {
-  return str1.split("").sort().join("") === str2.split("").sort().join("");
+  #getTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, "0");
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    return `${hours}:${minutes}`;
+  }
+
+  qoldiq() {
+    console.log(
+      `Hozir ${this.#getTime()}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`,
+    );
+  }
+
+  sotish(mahsulot, miqdor) {
+    if (this[mahsulot] === undefined) {
+      console.log(`${mahsulot} mavjud emas!`);
+      return;
+    }
+    if (this[mahsulot] < miqdor) {
+      console.log(`Yetarli ${mahsulot} yo'q! Faqat ${this[mahsulot]}ta bor.`);
+      return;
+    }
+    this[mahsulot] -= miqdor;
+    console.log(`${this.#getTime()}da ${miqdor}ta ${mahsulot} sotildi.`);
+  }
+
+  qabul(mahsulot, miqdor) {
+    if (this[mahsulot] === undefined) {
+      console.log(`${mahsulot} mavjud emas!`);
+      return;
+    }
+    this[mahsulot] += miqdor;
+    console.log(`${this.#getTime()}da ${miqdor}ta ${mahsulot} qabul qilindi.`);
+  }
 }
 
-console.log(checkContent("mitgroup", "gmtiprou"));
-console.log(checkContent("uzbekistan", "southkorea"));
+const shop = new Shop(4, 5, 2);
+
+shop.qoldiq();
+
+shop.sotish("non", 3);
+
+shop.qabul("cola", 4);
+
+shop.qoldiq();
+
+// // MIT TASK C
+
+// function checkContent(str1, str2) {
+//   return str1.split("").sort().join("") === str2.split("").sort().join("");
+// }
+
+// console.log(checkContent("mitgroup", "gmtiprou"));
+// console.log(checkContent("uzbekistan", "southkorea"));
 
 // // MIT TASK B
 // function countDigits(str) {
