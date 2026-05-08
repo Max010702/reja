@@ -1,9 +1,25 @@
-// MIT TASK E
-function getReverse(str) {
-  return str.split("").reverse().join("");
+// MIT TASK F
+function findDoublers(str) {
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j < str.length; j++) {
+      if (str[i] === str[j]) {
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
-console.log(getReverse("hello"));
+console.log(findDoublers("hello")); // true  (l harfi 2 marta)
+console.log(findDoublers("world")); // false (harf takrorlanmagan)
+console.log(findDoublers("apple")); // true  (p harfi 2 marta)
+
+// // MIT TASK E
+// function getReverse(str) {
+//   return str.split("").reverse().join("");
+// }
+
+// console.log(getReverse("hello"));
 
 // // MIT TASK D
 // class Shop {
