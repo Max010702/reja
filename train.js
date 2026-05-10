@@ -1,18 +1,25 @@
-// MIT TASK F
-function findDoublers(str) {
-  for (let i = 0; i < str.length; i++) {
-    for (let j = i + 1; j < str.length; j++) {
-      if (str[i] === str[j]) {
-        return true;
-      }
-    }
-  }
-  return false;
+// MIT TASK G
+function getHighestIndex(arr) {
+    return arr.indexOf(Math.max(...arr));
 }
 
-console.log(findDoublers("hello")); // true  (l harfi 2 marta)
-console.log(findDoublers("world")); // false (harf takrorlanmagan)
-console.log(findDoublers("apple")); // true  (p harfi 2 marta)
+console.log(getHighestIndex([5, 21, 12, 21, 8])); // 1
+
+// // MIT TASK F
+// function findDoublers(str) {
+//   for (let i = 0; i < str.length; i++) {
+//     for (let j = i + 1; j < str.length; j++) {
+//       if (str[i] === str[j]) {
+//         return true;
+//       }
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(findDoublers("hello")); // true  (l harfi 2 marta)
+// console.log(findDoublers("world")); // false (harf takrorlanmagan)
+// console.log(findDoublers("apple")); // true  (p harfi 2 marta)
 
 // // MIT TASK E
 // function getReverse(str) {
