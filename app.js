@@ -64,6 +64,18 @@ app.post("/delete-all", (req, res) => {
   }
 });
 
+// app.get("/", async function (req, res) {
+//   console.log("user entered /");
+//   try {
+//     const database = db();
+//     const data = await database.collection("plans").find().toArray();
+//     res.render("reja", { items: data });
+//   } catch (err) {
+//     console.log(err);
+//     res.end("something went wrong");
+//   }
+// });
+
 app.get("/", function (req, res) {
   console.log("user entered /");
   const database = db();
