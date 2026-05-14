@@ -1,9 +1,27 @@
-// MIT TASK G
-function getHighestIndex(arr) {
-    return arr.indexOf(Math.max(...arr));
+// MIT TASK I
+
+// MIT TASK H
+function getPositive(arr) {
+    let result = "";
+    
+    for (let num of arr) {
+        if (num > 0) {
+            result += num;
+        }
+    }
+    
+    return result;
 }
 
-console.log(getHighestIndex([5, 21, 12, 21, 8])); // 1
+console.log(getPositive([1, -4, 2]));     
+console.log(getPositive([-5, 7, -1, 10]));
+
+// MIT TASK G
+// function getHighestIndex(arr) {
+//     return arr.indexOf(Math.max(...arr));
+// }
+
+// console.log(getHighestIndex([5, 21, 12, 21, 8])); // 1
 
 // // MIT TASK F
 // function findDoublers(str) {
