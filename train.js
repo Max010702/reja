@@ -1,20 +1,50 @@
 // MIT TASK I
+function majorityElement(nums) {
+    if (!nums || nums.length === 0) {
+        return null;
+    }
 
-// MIT TASK H
-function getPositive(arr) {
-    let result = "";
-    
-    for (let num of arr) {
-        if (num > 0) {
-            result += num;
+    const count = new Map();
+
+    // Chastotani hisoblaymiz
+    for (let num of nums) {
+        count.set(num, (count.get(num) || 0) + 1);
+    }
+
+    let maxCount = 0;
+    let result = nums[0];
+
+    // Eng ko'p takrorlangan elementni topamiz
+    for (let [num, freq] of count) {
+        if (freq > maxCount) {
+            maxCount = freq;
+            result = num;
         }
     }
-    
+
     return result;
 }
 
-console.log(getPositive([1, -4, 2]));     
-console.log(getPositive([-5, 7, -1, 10]));
+// Test
+console.log(majorityElement([1,2,3,4,5,4,3,4])); 
+console.log(majorityElement([1,1,1,2,2,3]));     
+console.log(majorityElement([5,5,5,5,5]));       
+
+// MIT TASK H
+// function getPositive(arr) {
+//     let result = "";
+    
+//     for (let num of arr) {
+//         if (num > 0) {
+//             result += num;
+//         }
+//     }
+    
+//     return result;
+// }
+
+// console.log(getPositive([1, -4, 2]));     
+// console.log(getPositive([-5, 7, -1, 10]));
 
 // MIT TASK G
 // function getHighestIndex(arr) {
