@@ -1,34 +1,48 @@
-// MIT TASK I
-function majorityElement(nums) {
-    if (!nums || nums.length === 0) {
-        return null;
-    }
+// MIT TASK J
 
-    const count = new Map();
-
-    // Chastotani hisoblaymiz
-    for (let num of nums) {
-        count.set(num, (count.get(num) || 0) + 1);
-    }
-
-    let maxCount = 0;
-    let result = nums[0];
-
-    // Eng ko'p takrorlangan elementni topamiz
-    for (let [num, freq] of count) {
-        if (freq > maxCount) {
-            maxCount = freq;
-            result = num;
-        }
-    }
-
-    return result;
+function findLongestWord(str) {
+  return str
+    .split(" ")
+    .reduce((longest, word) => 
+      word.length > longest.length ? word : longest
+    , "");
 }
 
 // Test
-console.log(majorityElement([1,2,3,4,5,4,3,4])); 
-console.log(majorityElement([1,1,1,2,2,3]));     
-console.log(majorityElement([5,5,5,5,5]));       
+console.log(findLongestWord("I come from Uzbekistan")); // "Uzbekistan"
+
+
+// // MIT TASK I
+// function majorityElement(nums) {
+//     if (!nums || nums.length === 0) {
+//         return null;
+//     }
+
+//     const count = new Map();
+
+//     // Chastotani hisoblaymiz
+//     for (let num of nums) {
+//         count.set(num, (count.get(num) || 0) + 1);
+//     }
+
+//     let maxCount = 0;
+//     let result = nums[0];
+
+//     // Eng ko'p takrorlangan elementni topamiz
+//     for (let [num, freq] of count) {
+//         if (freq > maxCount) {
+//             maxCount = freq;
+//             result = num;
+//         }
+//     }
+
+//     return result;
+// }
+
+// // Test
+// console.log(majorityElement([1,2,3,4,5,4,3,4])); 
+// console.log(majorityElement([1,1,1,2,2,3]));     
+// console.log(majorityElement([5,5,5,5,5]));       
 
 // MIT TASK H
 // function getPositive(arr) {
